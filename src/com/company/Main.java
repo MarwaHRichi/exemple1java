@@ -16,6 +16,7 @@ public class Main {
         String lastname;
         String email;
         int age;
+        String password;
         System.out.println("Entrer Firstname");
         firstname = scan.nextLine();
         System.out.println("Entrer Lastname");
@@ -24,11 +25,11 @@ public class Main {
         email = scan.nextLine();
         System.out.println("Entrer age");
         age = Integer.parseInt(scan.nextLine());
-        User user3 = new User("Meriem", "hr","meriemhr@gmail","1234",25);
-        //System.out.println("L'utilisateur est :" +firstname+ " " +lastname+ " son email est :"+email+ " et il a " +age+ " ans");
-        System.out.println("L'utilisateur est :" +user3.firstname+ " " +user3.lastname+ " son email est :"+user3.email+ " et il a " +user3.age+ " ans");
+        System.out.println("Entrer password");
+        password = scan.nextLine();
+        User user3 = new User(firstname, lastname,email,password ,age);
 
-        //System.out.println(user3);
+        System.out.println(user3);
 
 
     }
